@@ -1,4 +1,4 @@
-$(".comment-count").html("<%= j(render 'book_comments/count', book: @book, book_comment: @book_comment) %>");
+$("#book_<%= @book.id %> .comment-count").html("<%= j(render 'book_comments/count', book: @book, book_comment: @book_comment) %>");
 $(".comment-index").html("<%= j(render 'book_comments/index', book: @book) %>");
-$(".comment_textarea").val("");
+$("#book_comment_comment").val("");
 alert('コメントを送信する');
